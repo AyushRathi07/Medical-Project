@@ -3,7 +3,7 @@ const router = require("express").Router();
 const {hasAdminAuthorization} = require("../controllers/diseases");
 
 
-router.get('/diseases',hasAdminAuthorization,function(req,res){
+router.get('/diseases', function(req,res){
     Disease.find({},function(err,diseases){
         if(err){
             return res.status(400).json({
