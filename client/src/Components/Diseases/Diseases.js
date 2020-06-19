@@ -19,18 +19,18 @@ class Diseases extends Component {
 
 	const list = this.state.diseases.map((item) => {
 		return (
-			<a onClick={() => this.setState({selDisease: item.name})} class="list-group-item">{item.name}</a>
+			<a onClick={() => this.setState({selDisease: item.name})} class="list-group-item cursor-pointer"><strong>{item.name}</strong></a>
 		)
 	})
 
   return (
-		<div className="row ml-2">
-			<div className="col-md-3">
-				<div className="list-group">
+		<div className="row ml-2 mb-2 mr-1">
+			<div className="col-md-3 mt-3">
+				<div className="list-group scroll-y">
 					{list}
 				</div>
 			</div>
-			<div className="col-md-9">
+			<div className="col-md-9 mt-2 scroll-y flex-container">
 				<DisplayType disease={this.state.diseases.filter((item) => item.name === this.state.selDisease)[0]} />
 			</div>
 		</div>

@@ -65,5 +65,28 @@
 
   .makeitflex{
     display: inline-flex;
-    width: 30rem;
+    width: 45%;
+  }
+
+  .scroll-y {
+    overflow-y: auto;
+    height: 28rem;
+  }
+
+  /* .flex-container{
+    width: 50%;
+  } */
+
+  @media screen and (max-width: 500px){
+    .makeitflex{
+      width: 90%;
+    }
+  }
+
+  .cursor-pointer{
+    cursor: pointer;
+  }
+
+  .card-body{
+    padding: 10px;
   }
