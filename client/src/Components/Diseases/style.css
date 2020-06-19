@@ -90,3 +90,19 @@
   .card-body{
     padding: 10px;
   }
+
+  .act{
+    background-color: blue;
+    /* color: white; */
+  }
+
+  .act > strong {
+    color: white;
+  }
+
+.searchbox{
+  padding-left: 60%;
+}
+.form-inline{
+  padding-top: 5px;
+}
